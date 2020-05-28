@@ -1,0 +1,433 @@
+body , ol , ul , h1 , h2 , h3 , h4 , h5 , h6 , p , th , td , dl , dd , form , fieldset , legend , input , textarea , i , select {
+	margin : 0;
+	padding : 0;
+}
+
+a {
+	-webkit-text-decoration-line : none !important;
+	        text-decoration-line : none !important;
+	   -moz-text-decoration-line : none !important;
+}
+
+::-moz-selection {
+	background : #57c091;
+	color : #FFF;
+}
+
+::selection {
+	background : #57c091;
+	color : #FFF;
+}
+
+::-moz-selection {
+	background : #57c091;
+	color : #FFF;
+}
+
+::-webkit-selection {
+	background : #57c091;
+	color : #FFF;
+}
+
+body {
+	cursor : url(../img/arrow.png), auto;
+	height: 100vh;
+	font-family : 'Vazir', monospace;
+	background-color : #FFF;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-ms-flex-line-pack : center;
+	align-content : center;
+	-webkit-font-smoothing : antialiased;
+}
+
+
+.container {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	width : 600px;
+	-webkit-box-pack : end;
+	-ms-flex-pack : end;
+	justify-content : flex-end;
+}
+    
+.top-content {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-ms-flex-wrap : wrap;
+		flex-wrap : wrap;
+	-webkit-box-pack : justify;
+	-ms-flex-pack : justify;
+	justify-content : space-between;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : row;
+		flex-direction : row;
+	-webkit-box-align : end;
+	-ms-flex-align : end;
+	align-items : flex-end;
+	padding-bottom : 50px;
+	border-bottom : 1px solid rgba(196, 196, 196, 0.35);
+}
+
+.text p {
+	font-weight : lighter;
+	font-size : 0.9rem;
+	line-height : 35px;
+}
+
+.text:hover {
+	color: #FFF;
+	background : #0ba360;
+}
+
+.name {
+	font-style : normal;
+	font-weight : normal;
+	font-size : 1.25rem;
+}
+
+.name:hover {
+	color: #FFF;
+	background : #0ba360;
+}	
+
+.iconbg {
+cursor : none;
+		transition : all .8s;
+display : -webkit-box;
+display : -ms-flexbox;
+display : flex;
+-webkit-box-pack : center;
+-ms-flex-pack : center;
+justify-content : center;
+-webkit-box-align : center;
+-ms-flex-align : center;
+align-items : center;
+width : 32px;
+height : 32px;
+background-color : rgba(196, 196, 196, 0.35);
+border-radius : 100%;
+margin-left : 18px;
+-webkit-transition : all .8s;
+   -moz-transition : all .8s;
+	-ms-transition : all .8s;
+	 -o-transition : all .8s;
+}
+
+.iconbg:hover {
+background : #0ba360;
+}
+
+.iconbg:hover i {
+color : #FFF;
+}
+i {
+color : #000;
+}
+
+.icons {
+display : -webkit-box;
+display : -ms-flexbox;
+display : flex;
+-webkit-box-pack : center;
+-ms-flex-pack : center;
+justify-content : center;
+}
+
+.icons :first-child {
+margin-left : 0;
+}
+
+.link {
+display : -webkit-box;
+display : -ms-flexbox;
+display : flex;
+-webkit-box-align : center;
+-ms-flex-align : center;
+align-items : center;
+margin-top : 15px;
+-webkit-box-pack : justify;
+-ms-flex-pack : justify;
+justify-content : space-between;
+}
+
+.pic {
+z-index : 2;
+position : absolute;
+right : 0;
+overflow : hidden;
+top: 0vw;
+}
+
+.pic img {
+width : 3rem;
+height : 3rem;
+}
+
+.hoverbox {
+z-index : 1;
+line-height : 15px;
+text-align : right;
+position : absolute;
+height : 52px;
+display : none;
+-webkit-box-pack : end;
+-ms-flex-pack : end;
+justify-content : flex-end;
+-webkit-box-orient : vertical;
+-webkit-box-direction : normal;
+-ms-flex-direction : column;
+	flex-direction : column;
+width : 144px;
+top: 0vw;
+}
+
+.hoverbox :first-child {
+margin-bottom : 4px;
+}
+
+.linktext {
+cursor : url(../img/arrow.png), auto;
+/* display: block; */
+font-size : 12px;
+font-weight: lighter;
+color : #000;
+-webkit-text-decoration-line : underline;
+		text-decoration-line : underline;
+}
+
+#change {
+width : 144px;
+height : 52px;
+position : relative;
+}
+
+.hoverbox a:hover {
+color : #FFF;
+background-color : #0ba360;
+}
+
+@media (max-width: 600px) {
+    body {
+        cursor : url(../img/arrow.png), auto;
+        height : 100vh;
+        font-family : 'Vazir', monospace;
+        background-color : #FFF;
+        display : -webkit-box;
+        display : -ms-flexbox;
+        display : flex;
+        -webkit-box-orient : vertical;
+        -webkit-box-direction : normal;
+        -ms-flex-direction : column;
+            flex-direction : column;
+        -webkit-box-align : center;
+        -ms-flex-align : center;
+        align-items : center;
+        -ms-flex-line-pack : center;
+        align-content : center;
+    }
+	.container {
+		margin-top : -35px;
+		display : -webkit-box;
+		display : -ms-flexbox;
+		display : flex;
+		-webkit-box-orient : vertical;
+		-webkit-box-direction : normal;
+		-ms-flex-direction : column;
+		    flex-direction : column;
+		width : 80vw;
+		/* justify-content: flex-end; */
+	}
+	.top-content {
+		width : 80vw;
+		display : -webkit-box;
+		display : -ms-flexbox;
+		display : flex;
+		-ms-flex-wrap : wrap;
+		    flex-wrap : wrap;
+		-webkit-box-pack : start;
+		-ms-flex-pack : start;
+		justify-content : flex-start;
+		-webkit-box-orient : vertical;
+		-webkit-box-direction : normal;
+		-ms-flex-direction : column;
+		    flex-direction : column;
+		-webkit-box-align : start;
+		-ms-flex-align : start;
+		align-items : flex-start;
+		padding-bottom : 36px;
+		border-bottom : 1px solid rgba(196, 196, 196, 0.35);
+	}
+	.text {
+		margin-bottom : 16px;
+		margin: 0 auto;
+	}
+	.text p {
+		font-weight : 500;
+		font-size : 13px;
+		line-height : 19px;
+	}
+	.name {
+		font-style : normal;
+		font-weight : normal;
+		font-size : 1.25rem;
+		margin: 0 auto;
+	}
+	.iconbg {
+		cursor : none;
+		-webkit-transition : all .8s;
+				transition : all .8s;
+		display : -webkit-box;
+		display : -ms-flexbox;
+		display : flex;
+		-webkit-box-pack : center;
+		-ms-flex-pack : center;
+		justify-content : center;
+		-webkit-box-align : center;
+		-ms-flex-align : center;
+		align-items : center;
+		width : 1.1rem;
+		height : 1.1rem;
+		background-color : rgba(196, 196, 196, 0.35);
+		border-radius : 100%;
+		margin-right : 12px;
+		margin-left : 0;
+		margin-top : 12px;
+		-webkit-transition : all .8s;
+		   -moz-transition : all .8s;
+			-ms-transition : all .8s;
+			 -o-transition : all .8s;
+		}
+		
+		.iconbg:hover {
+		background : #0ba360;
+		}
+		
+		.iconbg:hover i {
+		color : #FFF;
+		}
+		i {
+		color : #000;
+		font-size: 0.6rem;
+		}
+		
+		.icons {
+			display : -webkit-box;
+			display : -ms-flexbox;
+			display : flex;
+			-webkit-box-pack : center;
+			-ms-flex-pack : center;
+			justify-content : center;
+			width : 80vw;
+			}
+		
+		.icons :first-child {
+		margin-left : 0;
+		}
+	.link {
+		display : -webkit-box;
+		display : -ms-flexbox;
+		display : flex;
+		-ms-flex-wrap : wrap;
+		    flex-wrap : wrap;
+		-webkit-box-align : center;
+		-ms-flex-align : center;
+		align-items : center;
+		margin-top : 24px;
+		-webkit-box-pack : justify;
+		-ms-flex-pack : justify;
+		justify-content : space-between;
+	}
+	.pic {
+		z-index : 2;
+		overflow : hidden;
+		left: 13vw;
+	}
+	.pic img {
+		width : 40px;
+		height : 40px;
+	}
+	.linktext {
+		cursor : url(../img/arrow.png), auto;
+		/* display: block; */
+		font-size : 12px;
+		color : #000;
+		-webkit-text-decoration-line : underline;
+		        text-decoration-line : underline;
+	}
+
+	#change {
+	top: 10vw;
+	margin: 0 auto;
+}
+	.hoverbox {
+		text-align: center;
+	}
+}
+
+.darkmode--activated ::-moz-selection {
+	background : #a83f6e;
+	color : #FFF;
+}
+
+.darkmode--activated ::selection {
+	background : #a83f6e;
+	color : #FFF;
+}
+
+.darkmode--activated ::-moz-selection {
+	background : #a83f6e;
+	color : #FFF;
+}
+
+.darkmode--activated ::-webkit-selection {
+	background : #a83f6e;
+	color : #FFF;
+}
+
+.darkmode--activated p{
+    color: #000;
+  }
+
+.darkmode--activated a {
+	color : #fff;
+}
+.darkmode--activated .hoverbox a:hover {
+	color : #000;
+	background-color : #0ba360;
+}
+
+.darkmode--activated .name:hover {
+    color: #fff;
+    background: #f45c9f;
+}
+
+.darkmode--activated .text:hover {
+    color: #fff;
+    background: #f45c9f;
+}
+
+.darkmode--activated .text:hover p {
+    color: #fff;
+}
+
+.darkmode--activated .iconbg:hover {
+	background : #f45c9f;
+}
+
+
